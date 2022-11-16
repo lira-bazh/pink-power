@@ -4,3 +4,14 @@ $third-color: #454C5C;
 
 $header-height: 56px;
 
+@mixin text-color {
+  color: $secondary-color;
+}
+
+@mixin text-base {
+  color: $third-color
+}
+
+@mixin indent-wrapper {
+  padding: 0px 32px;
+}

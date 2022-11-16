@@ -36,10 +36,12 @@ const config = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(png|jpg(eg)?|gif|ico)$/,
-        use: {
-          loader: "file-loader",
-        },
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: "asset/resource",
       },
     ],
   },
