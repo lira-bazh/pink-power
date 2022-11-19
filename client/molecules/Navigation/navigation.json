@@ -1,30 +1,37 @@
 [
   {
     "title": "Поддержка",
-    "link": "/"
+    "link": "/",
+    "key": "help"
   },
   {
     "title": "Оплата",
-    "link": "/"
+    "link": "/",
+    "key": "pay"
   },
   {
     "title": "Переводы",
-    "link": "/"
+    "link": "/",
+    "key": "transition"
   },
   {
     "title": "Точки продаж",
-    "link": "/"
+    "link": "/",
+    "key": "shops"
   },
   {
     "title": "Карта покрытия",
-    "link": "/"
+    "link": "/",
+    "key": "map"
   },
   {
     "title": "Перейти в PINK",
-    "link": "/"
+    "link": "/",
+    "key": "toPink"
   },
   {
-    "title": "Кешбек",
-    "link": "/"
+    "title": "Кешбэк",
+    "link": "/",
+    "key": "cashback"
   }
 ]

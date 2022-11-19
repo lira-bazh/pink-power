@@ -1,5 +1,6 @@
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
+import TsconfigPathsPlugin from "tsconfig-paths-webpack-plugin";
 import { resolve } from "path";
 
 const __dirname = process.cwd();
@@ -8,6 +9,11 @@ const config = {
   entry: "./client/main.tsx",
   resolve: {
     extensions: [".js", ".jsx", ".json", ".ts", ".tsx"],
+    alias: {
+      styles: resolve(__dirname, "client/assets/styles"),
+      image: resolve(__dirname, "client/assets/image"),
+    },
+    plugins: [new TsconfigPathsPlugin()],
   },
   output: {
     filename: "assets/js/[name].bundle.js",
@@ -42,6 +48,11 @@ const config = {
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: "asset/resource",
+      },
+      {
+        test: /\.svg$/i,
+        issuer: /\.[jt]sx?$/,
+        use: ["@svgr/webpack"],
       },
     ],
   },

@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Layout, Main } from "../containers"
+import { Layout } from "../templates";
+import { Main } from "../pages";
 import './root.scss'
 
 const Root = () => {

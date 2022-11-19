@@ -1,0 +1,9 @@
+@import "~styles/var";
+
+.main-page {
+  @include indent-wrapper;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: auto 90%;
+  background-image: url('~image/main_background.svg');
+}

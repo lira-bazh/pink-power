@@ -4,6 +4,11 @@ $third-color: #454C5C;
 
 $header-height: 56px;
 
+
+@mixin svg-base {
+  fill: $third-color;
+}
+
 @mixin text-color {
   color: $secondary-color;
 }

@@ -8,8 +8,18 @@
     "jsx": "react",
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "typeRoots": ["./client/@types", "./node_modules/@types"],
+    "baseUrl": "client",
+    "paths": {
+      "image/*": ["assets/image/*"],
+      "atoms/*": ["atoms/*"],
+      "molecules/*": ["molecules/*"],
+      "organisms/*": ["organisms/*"],
+      "templates/*": ["templates/*"],
+      "pages/*": ["pages/*"]
+    }
   },
-  "include": ["./client/**/*.ts", "./client/**/*.tsx"],
+  "include": ["./client/assets/image/index.d.ts", "./client/**/*.ts", "./client/**/*.tsx"],
   "exclude": ["./node_modules"]
 }

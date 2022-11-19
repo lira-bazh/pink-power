@@ -1,0 +1,1 @@
+export { SandwichIcon } from "./SandwichIcon";

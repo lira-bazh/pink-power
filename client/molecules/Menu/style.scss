@@ -1,0 +1,27 @@
+@import "~styles/var";
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+
+    svg {
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      path {
+        stroke: $third-color;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        path {
+          stroke: $primary-color;
+        }
+      }
+
+    }
+  }

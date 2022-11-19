@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from 'react'
-import { Header } from './Header'
+import { Header } from 'organisms'
 import "./style.scss";
 
 type PropsType = {

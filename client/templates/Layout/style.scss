@@ -1,4 +1,4 @@
-@import "../../assets/styles/var";
+@import "~styles/var";
 
 .main-wrapper {
   min-height: 100vh;
@@ -30,20 +30,6 @@ header {
 }
 
 .header {
-  &-location {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    &__select-text {
-      @include text-color;
-      font: {
-        weight: bold;
-        size: 14px;
-      }
-      margin-right: 16px;
-    }
-  }
 
   &-navigation {
     display: flex;
@@ -55,8 +41,13 @@ header {
       size: 14px;
     }
 
-    > div {
+    > a {
       padding: 0px 9px;
+      text-decoration: none;
+      @include text-base;
+      &:hover {
+        @include text-color;
+      }
     }
   }
 }

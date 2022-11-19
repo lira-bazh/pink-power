@@ -1,13 +1,13 @@
 import React from 'react'
-import { Location } from './Location'
-import { Navigation } from './Navigation'
+import { Location, Menu, Navigation } from 'molecules';
 import "./style.scss";
 
 export const Header = () => {
   return (
     <header>
       <Location />
-      <Navigation/><div>Меню</div>
+      <Navigation/>
+      <Menu/>
     </header>
   );
 }
