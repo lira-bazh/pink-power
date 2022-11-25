@@ -1,0 +1,41 @@
+@import "~styles/var";
+
+$background1: url("~image/background-cloud-1.svg");
+$background2: url("~image/background-cloud-2.svg");
+$background3: url("~image/background-cloud-3.svg");
+$background4: url("~image/background-cloud-4.svg");
+
+.cloud-link {
+
+  a {
+    text-decoration: none;
+    @include text-base;
+    font-weight: 800;
+    font-size: 50px;
+    padding: 0 12px;
+  }
+
+  &_length-7:hover {
+    background-image: $background1;
+  }
+
+  &_length-8:hover {
+    background-image: $background2;
+  }
+
+  &_length-9:hover {
+    background-image: $background3;
+  }
+
+  &_length-10:hover {
+    background-image: $background4;
+  }
+
+  &:hover {
+    background-repeat: no-repeat;
+
+    a {
+      color: $primary-color;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 $primary-color: #ffffff;
 $secondary-color: #E01A79;
 $third-color: #454C5C;
+$fourth-color: #BEBFC0;
 
 $header-height: 56px;
 
@@ -16,6 +17,11 @@ $header-height: 56px;
 @mixin text-base {
   color: $third-color
 }
+
+@mixin text-light {
+  color: $fourth-color
+}
+
 
 @mixin indent-wrapper {
   padding: 0px 32px;

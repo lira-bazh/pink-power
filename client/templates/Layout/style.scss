@@ -12,44 +12,4 @@
   }
 }
 
-header {
-  @include indent-wrapper;
-  height: $header-height;
-  width: 100%;
-  position: absolute;
-  top: 0px;
-  background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(10px);
-  display: flex;
-  flex-direction: row;
-  line-height: $header-height;
-
-  > div:not(:first-child):not(:last-child) {
-    flex-grow: 1;
-  }
-}
-
-.header {
-
-  &-navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    @include text-base;
-    font: {
-      weight: 400;
-      size: 14px;
-    }
-
-    > a {
-      padding: 0px 9px;
-      text-decoration: none;
-      @include text-base;
-      &:hover {
-        @include text-color;
-      }
-    }
-  }
-}
-
 

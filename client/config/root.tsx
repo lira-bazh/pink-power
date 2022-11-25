@@ -6,14 +6,14 @@ import './root.scss'
 
 const Root = () => {
   return (
-    <Layout>
-      <BrowserRouter>
+    <BrowserRouter>
+      <Layout>
         <Routes>
           <Route path="/" element={<Main/>} />
           <Route path="*" element={<h3>404</h3>} />
         </Routes>
-      </BrowserRouter>
-    </Layout>
+      </Layout>
+    </BrowserRouter>
   );
 };
 

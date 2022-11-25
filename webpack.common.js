@@ -62,6 +62,7 @@ const config = {
     }),
     new HtmlWebpackPlugin({
       template: "client/index.html",
+      favicon: "./client/assets/image/favicon.svg"
     }),
   ],
 };

@@ -13,6 +13,8 @@
 
       path {
         stroke: $third-color;
+        transition-property: stroke;
+        transition-duration: 1s;
       }
 
       &:hover {

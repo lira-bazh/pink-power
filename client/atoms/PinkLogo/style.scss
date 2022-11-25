@@ -1,0 +1,9 @@
+.pink-logo {
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin-top: 8px;
+  }
+}

@@ -1,18 +1,23 @@
 @import "~styles/var";
 
-header {
+footer {
   @include indent-wrapper;
-  height: $header-height;
-  width: 100%;
   position: absolute;
-  top: 0px;
+  bottom: 0px;
+  width: 100%;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
+  @include text-light;
+
   display: flex;
   flex-direction: row;
-  line-height: $header-height;
 
-  > div:not(:first-child):not(:last-child) {
+  .copyright {
     flex-grow: 1;
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: row;
   }
 }

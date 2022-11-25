@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from 'react'
-import { Header } from 'organisms'
+import { Header, Footer } from 'organisms'
 import "./style.scss";
 
 type PropsType = {
@@ -11,7 +11,7 @@ export const Layout: FC<PropsType> = (props) => {
     <div className="main-wrapper">
       <Header/>
       {props.children}
-      <footer>Подвал</footer>
+      <Footer/>
     </div>
   );
 };
