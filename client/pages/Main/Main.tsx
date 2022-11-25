@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import { PinkLogo, CloudLink, Button } from 'atoms'
+import { PinkLogo, CloudLink, Button, BUTTON_STYLE } from 'atoms'
 import "./style.scss"
 
 export const Main = () => {
@@ -26,7 +26,7 @@ export const Main = () => {
           </div>
           <div className='main-page__order'>
             <div className='order-text'>С PINK POWER интернет будет с вами везде и всегда</div>
-            <div className='order-button'><Button title="Заказать SIM-карту"/></div>
+            <div className='order-button'><Button style={BUTTON_STYLE.WHITE} title="Заказать SIM-карту"/></div>
           </div>
         </div>
 
