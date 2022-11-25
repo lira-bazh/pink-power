@@ -1,9 +1,11 @@
 import React from 'react'
-import { PinkLogo, CloudLink } from 'atoms'
+import { Link } from "react-router-dom";
+import { PinkLogo, CloudLink, Button } from 'atoms'
 import "./style.scss"
 
 export const Main = () => {
   const devices = ["Смартфона", "Планшета", "Компьютера", "Бизнеса"]
+  const services = ["Перейти в PINK", "Интернет-магазин", "PINK ТВ", "Сервисы"]
 
   return (
     <div className='main-page'>
@@ -16,10 +18,15 @@ export const Main = () => {
                 return (<li><CloudLink to="/" title={device}/></li>)
               })}
             </ul>
-            <div className='services'></div>
+            <ul className='services'>
+              {services.map((service) => {
+                return (<li><Link to='/'>{service}</Link></li>)
+              })}
+            </ul>
           </div>
           <div className='main-page__order'>
             <div className='order-text'>С PINK POWER интернет будет с вами везде и всегда</div>
+            <div className='order-button'><Button title="Заказать SIM-карту"/></div>
           </div>
         </div>
 

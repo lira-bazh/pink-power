@@ -4,3 +4,4 @@ export { SandwichIcon } from "./SandwichIcon";
 export { PinkLogo } from "./PinkLogo";
 export { SocialIcon } from "./SocialIcon";
 export { CloudLink } from "./CloudLink";
+export { Button } from "./Button";

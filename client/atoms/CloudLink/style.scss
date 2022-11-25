@@ -6,6 +6,7 @@ $background3: url("~image/background-cloud-3.svg");
 $background4: url("~image/background-cloud-4.svg");
 
 .cloud-link {
+  background-image: none;
 
   a {
     text-decoration: none;
@@ -16,26 +17,22 @@ $background4: url("~image/background-cloud-4.svg");
   }
 
   &_length-7:hover {
-    background-image: $background1;
+    background: $background1 no-repeat;
   }
 
   &_length-8:hover {
-    background-image: $background2;
+    background: $background2 no-repeat;
   }
 
   &_length-9:hover {
-    background-image: $background3;
+    background: $background3 no-repeat;
   }
 
   &_length-10:hover {
-    background-image: $background4;
+    background: $background4 no-repeat;
   }
 
-  &:hover {
-    background-repeat: no-repeat;
-
-    a {
-      color: $primary-color;
-    }
+  &:hover a{
+    color: $primary-color;
   }
 }

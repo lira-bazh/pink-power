@@ -17,6 +17,7 @@
     flex-grow: 1;
     display: flex;
     flex-direction: row;
+    flex-wrap:wrap-reverse
   }
 
   &__links {
@@ -37,17 +38,43 @@
   }
 }
 
-.devices {
+.devices, .services {
   list-style-type: none;
+  width: fit-content;
+}
+
+.services {
+  margin-top: 64px;
+
+  li:not(:first-child) {
+    margin-top: 19px;
+  }
+}
+
+.services a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 21px;
+  color: #E01A79;
+  padding: 0 12px;
+
+  &:hover {
+    color: $third-color;
+  }
 }
 
 .order {
   &-text {
     width: 548px;
     margin-top: 81px;
+    margin-bottom: 46px;
     color: $primary-color;
     font-weight: 800;
     font-size: 55px;
     text-align: right;
+  }
+
+  &-button {
+    width: 235px;
   }
 }
