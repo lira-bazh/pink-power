@@ -1,10 +1,10 @@
 @import "~styles/var";
 
+$background-width: 983px;
+
 .main-page {
   @include indent-wrapper;
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-image: url('~image/main_background.svg');
+
   display: flex;
   flex-direction: column;
 
@@ -16,8 +16,15 @@
     width: 100%;
     flex-grow: 1;
     display: flex;
-    flex-direction: row;
-    flex-wrap:wrap-reverse
+
+    @media screen and (min-width: $screen-width) {
+      flex-direction: row;
+      flex-wrap: wrap-reverse;
+    }
+
+    @media screen and (max-width: $screen-width) {
+      flex-direction: column-reverse;
+    }
   }
 
   &__links {
@@ -30,7 +37,14 @@
   }
 
   &__order {
-    width: 983px;
+    @media screen and (min-width: $screen-width) {
+      max-width: 983px;
+    }
+
+    @media screen and (max-width: $screen-width) {
+      height: 500px;
+    }
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -65,7 +79,7 @@
 
 .order {
   &-text {
-    width: 548px;
+    max-width: 548px;
     margin-top: 81px;
     margin-bottom: 46px;
     color: $primary-color;

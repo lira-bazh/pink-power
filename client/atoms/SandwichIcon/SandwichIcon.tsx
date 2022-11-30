@@ -3,6 +3,7 @@ import React from 'react'
 export const SandwichIcon = () => {
   return (
     <svg
+      className='sandwich-icon'
       width="28"
       height="20"
       viewBox="0 0 28 20"

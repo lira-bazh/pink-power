@@ -1,15 +1,22 @@
 @import "~styles/var";
 
-.main-wrapper {
+.layout-wrapper {
   min-height: 100vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
 
   & > *:nth-child(2) {
     flex-grow: 1;
-    min-height: 100%;
-    padding-top: $header-height;
+    height: 100%;
   }
+}
+
+.layout__spot {
+  background-repeat: no-repeat;
+  background-image: url('~image/main_background.svg');
+  background-position-x: right;
+  background-position-y: top;
 }
 
 

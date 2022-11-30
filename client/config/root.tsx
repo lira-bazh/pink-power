@@ -1,18 +1,24 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Layout } from "../templates";
-import { Main } from "../pages";
+import { Layout, LayoutBackground } from "../templates";
+import { Main, Order } from "../pages";
 import './root.scss'
 
 const Root = () => {
   return (
     <BrowserRouter>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Main/>} />
-          <Route path="*" element={<h3>404</h3>} />
-        </Routes>
-      </Layout>
+      <Routes>
+        <Route path="/" element={<Layout background={LayoutBackground.SPOT} />}>
+          <Route index element={<Main />} />
+        </Route>
+        <Route
+          path="/order"
+          element={<Layout background={LayoutBackground.WHITE} />}
+        >
+          <Route index element={<Order />} />
+        </Route>
+        <Route path="*" element={<h3>404</h3>} />
+      </Routes>
     </BrowserRouter>
   );
 };

@@ -17,5 +17,6 @@ button {
   &:active, &:hover {
     color: $primary-color;
     background-color: $third-color;
+    cursor: pointer;
   }
 }

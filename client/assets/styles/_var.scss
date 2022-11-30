@@ -5,6 +5,8 @@ $fourth-color: #BEBFC0;
 
 $header-height: 56px;
 
+$screen-width: 1200px;
+
 
 @mixin svg-base {
   fill: $third-color;
@@ -21,7 +23,6 @@ $header-height: 56px;
 @mixin text-light {
   color: $fourth-color
 }
-
 
 @mixin indent-wrapper {
   padding: 0px 32px;

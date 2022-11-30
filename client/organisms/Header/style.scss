@@ -1,18 +1,35 @@
 @import "~styles/var";
 
+$header-height: 56px;
+
 header {
   @include indent-wrapper;
   height: $header-height;
   width: 100%;
-  position: absolute;
-  top: 0px;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
   display: flex;
   flex-direction: row;
   line-height: $header-height;
 
-  > div:not(:first-child):not(:last-child) {
-    flex-grow: 1;
+  > div:not(:first-child) {
+    margin-left: 10px;
+  }
+
+  .navigation svg, .menu svg {
+    path {
+      stroke: $third-color;
+      transition-property: stroke;
+      transition-duration: 1s;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      path {
+        stroke: $primary-color;
+      }
+    }
+
   }
 }

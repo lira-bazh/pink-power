@@ -3,3 +3,8 @@ export type LinkType = {
   link: string,
   key: string
 }
+
+export enum LayoutBackground {
+  SPOT,
+  WHITE
+}

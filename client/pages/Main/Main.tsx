@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import { PinkLogo, CloudLink, Button, BUTTON_STYLE } from 'atoms'
+import { CloudLink, Button, BUTTON_STYLE } from 'atoms'
 import "./style.scss"
 
 export const Main = () => {
@@ -9,7 +9,7 @@ export const Main = () => {
 
   return (
     <div className='main-page'>
-        <div className='main-page__header'><PinkLogo/></div>
+        <div className='main-page__header'></div>
         <div className='main-page__content'>
           <div className='main-page__links'>
             ДЛЯ

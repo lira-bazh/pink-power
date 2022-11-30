@@ -3,27 +3,11 @@
 .menu {
     display: flex;
     flex-direction: row;
-    align-items:center;
+    align-items: center;
 
     svg {
-
       &:not(:last-child) {
         margin-right: 10px;
       }
-
-      path {
-        stroke: $third-color;
-        transition-property: stroke;
-        transition-duration: 1s;
-      }
-
-      &:hover {
-        cursor: pointer;
-
-        path {
-          stroke: $primary-color;
-        }
-      }
-
     }
   }
