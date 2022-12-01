@@ -14,9 +14,18 @@
 
 .layout__spot {
   background-repeat: no-repeat;
-  background-image: url('~image/main_background.svg');
-  background-position-x: right;
   background-position-y: top;
+
+  @media screen and (orientation: landscape) {
+    background-image: url('~image/main_background.svg');
+    background-position-x: right;
+  }
+
+  @media screen and (orientation: portrait) {
+    background-image: url('~image/main_background_mobile.svg');
+    background-size: 100%;
+  }
+
 }
 
 

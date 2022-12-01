@@ -5,49 +5,40 @@ $background-width: 983px;
 .main-page {
   @include indent-wrapper;
   display: flex;
-  flex-direction: column;
 
-  &__header {
-    width: 100%;
-    padding-top: 24px;
-    display: flex;
+  @media screen and (min-width: $screen-width) {
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items:center;
-
+    flex-wrap: wrap-reverse;
   }
 
-  &__content {
-    width: 100%;
-    flex-grow: 1;
-    display: flex;
-
-    @media screen and (min-width: $screen-width) {
-      flex-direction: row;
-      flex-wrap: wrap-reverse;
-    }
-
-    @media screen and (max-width: $screen-width) {
-      flex-direction: column-reverse;
-    }
+  @media screen and (max-width: $screen-width) {
+    flex-direction: column-reverse;
   }
 
   &__links {
     flex-grow: 1;
     @include text-color;
     font-weight: 800;
-    font-size: 21px;
+
+    @media screen and (orientation: landscape) {
+      font-size: 1.3em;
+    }
+
+    @media screen and (orientation: portrait) {
+      font-size: 1.1em;
+    }
+
     margin-top: 34px;
     margin-left: 66px;
   }
 
   &__order {
-    @media screen and (min-width: $screen-width) {
+    @media screen and (orientation: landscape) {
       max-width: 983px;
     }
 
-    @media screen and (max-width: $screen-width) {
-      height: 500px;
+    @media screen and (orientation: portrait) {
+      height: 400px;
     }
 
     display: flex;
@@ -63,7 +54,7 @@ $background-width: 983px;
 }
 
 .services {
-  margin-top: 64px;
+  margin-top: 7%;
 
   li:not(:first-child) {
     margin-top: 19px;
@@ -72,8 +63,9 @@ $background-width: 983px;
 
 .services a {
   text-decoration: none;
-  font-weight: 700;
-  font-size: 21px;
+  font: {
+    weight: 700;
+  }
   color: #E01A79;
   padding: 0 12px;
 
@@ -85,11 +77,20 @@ $background-width: 983px;
 .order {
   &-text {
     max-width: 548px;
-    margin-top: 81px;
-    margin-bottom: 46px;
+    min-width: 300px;
+    margin-top: 15%;
+    margin-bottom: 5%;
     color: $primary-color;
     font-weight: 800;
-    font-size: 55px;
+
+    @media screen and (orientation: landscape) {
+      font-size: 3.4em;
+    }
+
+    @media screen and (orientation: portrait) {
+      font-size: 2.2em;
+    }
+
     text-align: right;
   }
 

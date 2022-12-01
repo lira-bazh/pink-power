@@ -12,27 +12,47 @@ $background4: url("~image/background-cloud-4.svg");
     text-decoration: none;
     @include text-base;
     font-weight: 800;
-    font-size: 50px;
+
+    @media screen and (orientation: landscape) {
+      font-size: 2.4em;
+    }
+
+    @media screen and (orientation: portrait) {
+      font-size: 1.9em;
+    }
+
     padding: 0 12px;
   }
 
-  &_length-7:hover {
-    background: $background1 no-repeat;
+  &_length-7 {
+    &:hover, &:active {
+      background: $background1 no-repeat;
+      background-size: auto 100%;
+    }
   }
 
-  &_length-8:hover {
-    background: $background2 no-repeat;
+  &_length-8 {
+    &:hover, &:active {
+      background: $background2 no-repeat;
+      background-size: auto 100%;
+    }
   }
 
-  &_length-9:hover {
-    background: $background3 no-repeat;
+  &_length-9 {
+    &:hover, &:active {
+      background: $background3 no-repeat;
+      background-size: auto 100%;
+    }
   }
 
-  &_length-10:hover {
-    background: $background4 no-repeat;
+  &_length-10{
+    &:hover, &:active {
+      background: $background4 no-repeat;
+      background-size: auto 100%;
+    }
   }
 
-  &:hover a{
+  &:hover a, &:active a{
     color: $primary-color;
   }
 }

@@ -9,14 +9,6 @@ export const Main = () => {
 
   return (
     <div className="main-page">
-      <div className="main-page__header">
-        {[...Array(22)
-          .keys()]
-          .map((num: number) => {
-            return <Symbol key={`symbol-${num}`} type={num} />;
-          })}
-      </div>
-      <div className="main-page__content">
         <div className="main-page__links">
           ДЛЯ
           <ul className="devices">
@@ -46,7 +38,6 @@ export const Main = () => {
             <Button style={BUTTON_STYLE.WHITE} title="Заказать SIM-карту" />
           </div>
         </div>
-      </div>
     </div>
   );
 }
