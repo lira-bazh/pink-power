@@ -27,3 +27,8 @@ $screen-width: 1200px;
 @mixin indent-wrapper {
   padding: 0px 32px;
 }
+
+@mixin round-frame {
+  border: 1px solid $third-color;
+  border-radius: 32px;
+}
