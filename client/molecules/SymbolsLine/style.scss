@@ -1,0 +1,23 @@
+@import "~styles/var";
+
+.line {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: fit-content;
+  padding: 0 10px;
+  &-offset {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  &-gradient {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right, $primary-color 7%, transparent 14% 86%, $primary-color 93%);
+  }
+}

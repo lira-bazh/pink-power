@@ -1,1 +1,1 @@
-export { Symbol } from "./Symbol";
+export { Symbol, SYMBOL_AMOUNT } from "./Symbol";

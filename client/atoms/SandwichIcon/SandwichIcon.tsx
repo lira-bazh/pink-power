@@ -13,9 +13,9 @@ export const SandwichIcon = () => {
       <path
         d="M26 2H2M26 10H2M26 18H2"
         stroke="#454C5C"
-        stroke-width="3"
-        stroke-Linecap="round"
-        stroke-Linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

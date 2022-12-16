@@ -5,4 +5,4 @@ export { PinkLogo } from "./PinkLogo";
 export { SocialIcon } from "./SocialIcon";
 export { CloudLink } from "./CloudLink";
 export { Button, BUTTON_STYLE } from "./Button";
-export { Symbol } from "./Symbol";
+export { Symbol, SYMBOL_AMOUNT } from "./Symbol";
