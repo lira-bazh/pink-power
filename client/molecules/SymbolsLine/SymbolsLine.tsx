@@ -19,7 +19,7 @@ export const SymbolsLine = () => {
   }
   const [keys, setKeys] = React.useState<number[]>(getKeys());
 
-  let timerId = setTimeout(setOffset, 1, offset > 100 ? 0 : offset + 0.1);
+  let timerId = setTimeout(setOffset, 1, offset > 100 ? 0 : offset + 0.02);
 
   return (
     <div className="line">

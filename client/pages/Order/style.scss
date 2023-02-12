@@ -17,7 +17,7 @@
   flex-direction: row;
   justify-content: center;
   gap: 30px;
-  div {
+  > div {
     @include round-frame;
     padding: 45px 85px;
   }

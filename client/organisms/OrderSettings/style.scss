@@ -1,0 +1,21 @@
+@import "~styles/var";
+
+.order-settings {
+  padding: 35px 85px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 46px;
+
+  &-title {
+    text-align: left;
+    font-weight: 700;
+    font-size: 30px;
+    color: $third-color;
+  }
+
+  &-inputs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+  }
+}

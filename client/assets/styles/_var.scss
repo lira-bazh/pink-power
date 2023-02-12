@@ -2,6 +2,7 @@ $primary-color: #ffffff;
 $secondary-color: #E01A79;
 $third-color: #454C5C;
 $fourth-color: #BEBFC0;
+$input-background: #F9F8F8;
 
 $header-height: 56px;
 
@@ -31,4 +32,6 @@ $screen-width: 1200px;
 @mixin round-frame {
   border: 1px solid $third-color;
   border-radius: 32px;
+  width: 35%;
+  min-width: 556px;
 }
