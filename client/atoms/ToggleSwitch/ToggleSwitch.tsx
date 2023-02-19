@@ -1,6 +1,16 @@
-import React from 'react'
-import "./style.scss";
+import React, { type FC } from 'react'
+import "./style.scss"
 
-export const ToggleSwitch = ({ title, defaultValue }) => {
-  return <div>{title}</div>;
+type Props = {
+  defaultValue: boolean
+};
+
+export const ToggleSwitch: FC<Props> = ({ defaultValue }) => {
+  return (
+    <input
+      className="toggle-checkbox"
+      type="checkbox"
+      defaultChecked={defaultValue}
+    />
+  );
 };

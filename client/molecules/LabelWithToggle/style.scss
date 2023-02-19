@@ -1,0 +1,10 @@
+@import "~styles/var";
+
+.label-toggle {
+  color: $third-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 32px;
+
+}

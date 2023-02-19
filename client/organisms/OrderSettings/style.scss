@@ -18,4 +18,10 @@
     flex-direction: column;
     row-gap: 32px;
   }
+
+  &-checkboxes {
+    display: flex;
+    flex-direction: column;
+    row-gap: 27px;
+  }
 }

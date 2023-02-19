@@ -1,0 +1,1 @@
+export { TypeDelivery } from "./TypeDelivery";

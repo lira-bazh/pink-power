@@ -8,3 +8,4 @@ export { Button, BUTTON_STYLE } from "./Button";
 export { Symbol, SYMBOL_AMOUNT } from "./Symbol";
 export { Input } from "./Input";
 export { ToggleSwitch } from "./ToggleSwitch";
+export { RadioButton } from "./RadioButton";

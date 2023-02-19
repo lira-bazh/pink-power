@@ -1,5 +1,7 @@
 import React from 'react'
-import { Input, ToggleSwitch } from "atoms";
+import { Input } from "atoms";
+import { LabelWithToggle } from "molecules";
+import { TypeDelivery } from "..";
 import "./style.scss";
 
 export const OrderSettings = () => {
@@ -7,15 +9,21 @@ export const OrderSettings = () => {
     <div className="order-settings">
       <div className="order-settings-title">Данные получателя</div>
       <div className="order-settings-inputs">
-        <Input type="text" value="Уфа ( Респ.Башкортостан)" />
-        <Input type="text" value="+7" />
+        <Input type="text" defaultValue="Уфа ( Респ.Башкортостан)" />
+        <Input type="text" defaultValue="+7" />
       </div>
-      <div>
-        <ToggleSwitch
+      <div className="order-settings-checkboxes">
+        <LabelWithToggle
           title="Перейти в PINK со своим номером"
           defaultValue={true}
         />
+        <LabelWithToggle
+          title="Подключить услугу PINK POWER"
+          defaultValue={true}
+        />
       </div>
+      <div className="order-settings-title">Выберите способ получения</div>
+      {/* <div><TypeDelivery/></div> */}
     </div>
   );
 }
