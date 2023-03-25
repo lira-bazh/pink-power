@@ -1,0 +1,36 @@
+@import "~styles/var";
+
+.choice-delivery {
+  display: flex;
+  flex-direction: row;
+  label {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    .delivery {
+      &-title {
+        font-weight: 700;
+        display: flex;
+        flex-direction: row;
+        color: $third-color;
+        &__text {
+          margin-left: 10px;
+        }
+      }
+      &-description {
+        margin-top: 15px;
+        margin-left: 15px;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: $fourth-color;
+        text-align: left;
+        font-size: 0.9em;
+      }
+    }
+  }
+}
+
+

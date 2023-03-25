@@ -23,7 +23,7 @@ export const OrderSettings = () => {
         />
       </div>
       <div className="order-settings-title">Выберите способ получения</div>
-      {/* <div><TypeDelivery/></div> */}
+      <div><TypeDelivery/></div>
     </div>
   );
 }
