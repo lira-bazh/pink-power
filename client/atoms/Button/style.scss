@@ -10,17 +10,28 @@
   border: none;
   outline: none;
   text-decoration: none;
+  transition: background-color 0.5s;
+  transition: color 0.7s;
 }
 
 .white {
   @include text-base;
   background-color: $primary-color;
-  transition: background-color 0.5s;
-  transition: color 0.7s;
 
   &:active, &:hover {
     color: $primary-color;
     background-color: $third-color;
+    cursor: pointer;
+  }
+}
+
+.pink {
+  color: $primary-color;
+  background-color: $secondary-color;
+  &:active, &:hover {
+    color: $secondary-color;
+    background-color: $primary-color;
+    border: 1px solid $secondary-color;
     cursor: pointer;
   }
 }

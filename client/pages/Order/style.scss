@@ -20,6 +20,14 @@
   gap: 30px;
   > div {
     @include round-frame;
+    width: 35%;
+    min-width: 556px;
     padding: 45px 85px;
+  }
+  &-title {
+    text-align: left;
+    font-weight: 700;
+    font-size: 30px;
+    color: $third-color;
   }
 }

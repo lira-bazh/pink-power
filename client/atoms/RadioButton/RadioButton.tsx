@@ -1,6 +1,12 @@
 import React from 'react'
 import "./style.scss";
 
+type PropsType = {
+  name: string;
+  value: string;
+  onChange: (value: string) => void
+};
+
 export const RadioButton = ({ name, value, onChange }) => {
   return (
     <>

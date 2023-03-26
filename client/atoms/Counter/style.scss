@@ -1,0 +1,30 @@
+@import "~styles/var";
+
+$buttonSize: 30px;
+
+.counter-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 23px;
+  button {
+    width: $buttonSize;
+    height: $buttonSize;
+    background-color: $light_button;
+    color: $third-color;
+    border: none;
+    border-radius: 50%;
+    font-size: 21px;
+    padding-bottom: 2px;
+    cursor: pointer;
+    &:hover {
+      background-color: $fourth-color;
+    }
+  }
+
+  &__number {
+    color: $secondary-color;
+    font-weight: 700;
+    font-size: 30px;
+  }
+}

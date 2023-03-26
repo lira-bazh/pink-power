@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Layout, LayoutBackground } from "../templates";
-import { Main, Order } from "../pages";
+import { Main, Order, ConfirmationOrder } from "../pages";
 import './root.scss'
 
 const Root = () => {
@@ -12,10 +12,15 @@ const Root = () => {
           <Route index element={<Main />} />
         </Route>
         <Route
-          path="/order"
+          path="/*"
           element={<Layout background={LayoutBackground.WHITE} />}
         >
-          <Route index element={<Order />} />
+          <Route path="order" index element={<Order />} />
+          <Route
+            path="confirmation-order"
+            index
+            element={<ConfirmationOrder />}
+          />
         </Route>
         <Route path="*" element={<h3>404</h3>} />
       </Routes>

@@ -7,7 +7,7 @@ import "./style.scss";
 export const OrderSettings = () => {
   return (
     <div className="order-settings">
-      <div className="order-settings-title">Данные получателя</div>
+      <div className="order-content-title">Данные получателя</div>
       <div className="order-settings-inputs">
         <Input type="text" defaultValue="Уфа ( Респ.Башкортостан)" />
         <Input type="text" defaultValue="+7" />
@@ -22,8 +22,10 @@ export const OrderSettings = () => {
           defaultValue={true}
         />
       </div>
-      <div className="order-settings-title">Выберите способ получения</div>
-      <div><TypeDelivery/></div>
+      <div className="order-content-title">Выберите способ получения</div>
+      <div>
+        <TypeDelivery />
+      </div>
     </div>
   );
 }
