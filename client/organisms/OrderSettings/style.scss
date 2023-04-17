@@ -10,6 +10,21 @@
     display: flex;
     flex-direction: column;
     row-gap: 32px;
+    .custom-selector {
+      text-align: left;
+      &__select {
+        border: 0;
+        border-radius: 32px;
+        background-color: #f9f8f8;
+        color: #454c5c;
+        padding: 9px 32px;
+        margin-bottom: 5px;
+      }
+      &__dropdown {
+        margin-left: 10px;
+        width: 90%;
+      }
+    }
   }
 
   &-checkboxes {

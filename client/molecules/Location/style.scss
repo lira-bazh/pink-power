@@ -1,16 +1,16 @@
 @import "~styles/var";
 
 .location {
+  padding-left: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
 
-  &__select-text {
+  .custom-selector__select{
     @include text-color;
     font: {
       weight: bold;
-      size: 0.9em;
     }
-    margin-right: 16px;
+    width: 200px;
   }
 }

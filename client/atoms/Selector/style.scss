@@ -1,0 +1,52 @@
+@import "~styles/var";
+
+.custom-selector {
+  position: relative;
+  line-height: 1em;
+  font {
+    size: 0.9em;
+  }
+  &__select {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    padding: 5px;
+  }
+  &__text {
+    flex-grow: 1;
+  }
+  &__arrow {
+    cursor: pointer;
+  }
+  &__dropdown {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba($input-background, 0.9);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.4s, visibility 0.4s, transform 0.4s;
+    z-index: 1;
+    ul {
+      list-style-type: none;
+      max-height: 250px;
+      overflow: auto;
+      li {
+        padding: 5px 10px;
+        cursor: pointer;
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+  &__hide {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}

@@ -10,3 +10,5 @@ export { Input } from "./Input";
 export { ToggleSwitch } from "./ToggleSwitch";
 export { RadioButton } from "./RadioButton";
 export { Counter } from "./Counter";
+export { Selector } from "./Selector";
+export { ArrowUpIcon } from "./ArrowUpIcon";
