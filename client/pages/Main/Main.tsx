@@ -1,24 +1,26 @@
-import React from 'react'
+import React from "react";
 import { Link } from "react-router-dom";
-import { CloudLink, Button, BUTTON_STYLE, Symbol } from 'atoms'
-import "./style.scss"
+import { CloudLink, Button, BUTTON_STYLE, Symbol } from "atoms";
+import devices from "../../data/devicesLinks.json";
+import "./style.scss";
 
 export const Main = () => {
-  const devices = ["Смартфона", "Планшета", "Компьютера", "Бизнеса"]
-  const services = ["Перейти в PINK", "Интернет-магазин", "PINK ТВ", "Сервисы"]
+  const services = ["Перейти в PINK", "Интернет-магазин", "PINK ТВ", "Сервисы"];
 
   return (
     <div className="main-page">
       <div className="main-page__links">
         ДЛЯ
         <ul className="devices">
-          {devices.map((device, index) => {
-            return (
-              <li>
-                <CloudLink to="/" title={device} />
-              </li>
-            );
-          })}
+          {devices.map(
+            ({ title, url }: { title: string, url: string }, index) => {
+              return (
+                <li>
+                  <CloudLink to={url} title={title} />
+                </li>
+              );
+            }
+          )}
         </ul>
         <ul className="services">
           {services.map((service) => {
@@ -44,4 +46,4 @@ export const Main = () => {
       </div>
     </div>
   );
-}
+};

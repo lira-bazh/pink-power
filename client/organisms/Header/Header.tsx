@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import { PinkLogo } from 'atoms';
 import { Location, Menu, Navigation } from 'molecules';
 import "./style.scss";
@@ -6,10 +7,12 @@ import "./style.scss";
 export const Header = () => {
   return (
     <header>
-      <PinkLogo/>
+      <Link to="/">
+        <PinkLogo />
+      </Link>
       <Location />
-      <Navigation/>
-      <Menu/>
+      <Navigation />
+      <Menu />
     </header>
   );
 }

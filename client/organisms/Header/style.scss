@@ -17,6 +17,12 @@ header {
     margin-left: 10px;
   }
 
+  > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .navigation svg, .menu svg {
     path {
       stroke: $third-color;
