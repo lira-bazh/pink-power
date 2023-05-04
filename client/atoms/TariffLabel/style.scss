@@ -1,0 +1,26 @@
+@import "~styles/var";
+
+.tariff-label {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  height: fit-content;
+  color: $third-color;
+  font-weight: 700;
+
+  path {
+    fill: $third-color;
+  }
+
+  &_bold {
+    font-weight: 800;
+  }
+
+  &__title {
+    font-size: 4.5em;
+  }
+  &__sign {
+    margin-left: 9px;
+    font-weight: 700;
+  }
+}

@@ -12,3 +12,4 @@ export { RadioButton } from "./RadioButton";
 export { Counter } from "./Counter";
 export { Selector } from "./Selector";
 export { ArrowUpIcon } from "./ArrowUpIcon";
+export { TariffLabel } from "./TariffLabel";
