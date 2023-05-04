@@ -1,6 +1,6 @@
 import React from 'react'
 import { RandomSymbol } from "molecules";
-import { Tariff } from "organisms";
+import { Tariff, SmartphonesToggles } from "organisms";
 import "./style.scss";
 
 export const Smartphones = () => {
@@ -16,7 +16,8 @@ export const Smartphones = () => {
           <RandomSymbol />
         </div>
       </div>
-      <Tariff/>
+      <Tariff />
+      <SmartphonesToggles/>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { ToggleSwitch } from "atoms";
 import "./style.scss";
 
 type Props = {
-  title: string
+  title: string | JSX.Element
   defaultValue: boolean;
 };
 

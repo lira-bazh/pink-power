@@ -4,3 +4,4 @@ export { OrderSettings } from "./OrderSettings";
 export { OrderPrice } from "./OrderPrice";
 export { TypeDelivery } from "./TypeDelivery";
 export { Tariff } from "./Tariff";
+export { SmartphonesToggles } from "./SmartphonesToggles";
