@@ -14,3 +14,4 @@ export { Selector } from "./Selector";
 export { ArrowUpIcon } from "./ArrowUpIcon";
 export { TariffLabel } from "./TariffLabel";
 export { DissolutionNumber } from "./DissolutionNumber";
+export { TransparentNumbers } from "./TransparentNumbers";

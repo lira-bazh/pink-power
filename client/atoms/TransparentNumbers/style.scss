@@ -1,0 +1,27 @@
+@import "~styles/var";
+
+.transparent-numbers {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    font-weight: 800;
+    font-size: 4.5em;
+    color: $third-color;
+    opacity: 0.1;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

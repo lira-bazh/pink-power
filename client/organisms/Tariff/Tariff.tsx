@@ -1,5 +1,5 @@
-import React from 'react'
-import { TariffLabel } from "atoms";
+import React from "react";
+import { TariffLabel, TransparentNumbers } from "atoms";
 import "./style.scss";
 
 export const Tariff = () => {
@@ -21,11 +21,16 @@ export const Tariff = () => {
 
   return (
     <div className="tariff">
-      <div className="tariff__main-text">
+      <div className="tariff__line-1">
         <TariffLabel title="744,13" sign="₽ на 30 дней" bold={false} />
-        <TariffLabel title="277" sign="МИН" bold={true} />
-        <TariffLabel title={infinity} sign="ГБ" bold={true} />
       </div>
+      <TransparentNumbers align="right" value={276} />
+      <div className="tariff__minutes">
+        <TariffLabel title="277" sign="МИН" bold={true} />
+        <TransparentNumbers align="left" value={278} />
+      </div>
+      <TransparentNumbers align="right" value={50} />
+      <TariffLabel title={infinity} sign="ГБ" bold={true} />
     </div>
   );
-}
+};
