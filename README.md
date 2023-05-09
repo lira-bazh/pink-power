@@ -7,8 +7,12 @@
 Стэк: TypeScript. React, Scss
 
 ## Особенности
-+ Верстка по макету figma
-+ Стилизованный выпадающий список, переключатели, радиокнопки
+<li>Верстка по макету figma</li>
+<li>Стилизованный выпадающий список<br/><img src="https://github.com/lira-bazh/pink-power/blob/master/selector.png" width="200"></li>
+<li>Стилизованные переключатели<br/><img src="https://github.com/lira-bazh/pink-power/blob/master/toggle.png" width="250"></li>
+<li>Стилизованные радиокнопки<br/><img src="https://github.com/lira-bazh/pink-power/blob/master/radio.png" width="250"></li>
+<li>Стилизованнй список<br/><img src="https://github.com/lira-bazh/pink-power/blob/master/list.png" width="250"></li>
+
 
 ## Как запустить?
     npm install
