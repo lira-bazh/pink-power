@@ -1,0 +1,1 @@
+export { SmartphonesAdvantages } from "./SmartphonesAdvantages";

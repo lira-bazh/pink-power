@@ -1,0 +1,22 @@
+@import "~styles/var";
+
+.smartphones-advantages {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: $third-color;
+
+  > * {
+    min-width: 33%;
+  }
+
+  .symbol {
+    > svg {
+      path, rect {
+        fill: $third-color;
+      }
+    }
+  }
+}

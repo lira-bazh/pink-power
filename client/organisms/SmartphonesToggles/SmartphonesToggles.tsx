@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button, BUTTON_STYLE } from "atoms";
 import { LabelWithToggle } from "molecules";
 import "./style.scss";
 
@@ -30,6 +31,11 @@ export const SmartphonesToggles = () => {
       <LabelWithToggle
         title={getLabel("PINK POWER", 289)}
         defaultValue={true}
+      />
+      <Button
+        style={BUTTON_STYLE.PINK}
+        title="Заказать SIM-карту"
+        redirect="/order"
       />
     </div>
   );
