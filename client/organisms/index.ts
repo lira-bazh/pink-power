@@ -6,3 +6,4 @@ export { TypeDelivery } from "./TypeDelivery";
 export { Tariff } from "./Tariff";
 export { SmartphonesToggles } from "./SmartphonesToggles";
 export { SmartphonesAdvantages } from "./SmartphonesAdvantages";
+export { SmartphonesMobileApp } from "./SmartphonesMobileApp";

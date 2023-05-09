@@ -3,6 +3,8 @@
 $offset: 170px;
 
 .smartphones {
+  max-width: 100vw;
+  overflow: hidden;
 
   &__header {
     margin-top: 55px;
@@ -29,5 +31,13 @@ $offset: 170px;
     > :not(.symbol) {
       margin-left: $offset;
     }
+  }
+
+  h2 {
+    margin-top: 30px;
+    font-weight: 800;
+    font-size: 3em;
+    color: $third-color;
+    text-align: center;
   }
 }
